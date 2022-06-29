@@ -8,7 +8,7 @@ class InputHandler():
         pass
 
     # this method delegates
-    def handleInput(s, actor):
+    def handleInput(self, s, actor):
         if s == "w":
             # send move command
             command.MoveCommand.execute(actor)
