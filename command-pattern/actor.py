@@ -13,17 +13,26 @@ class Actor:
         self.position += 1
         # raise NotImplementedError()  # makes sure its overridden
 
+    def identify(self):
+        raise NotImplementedError()  # makes sure its overridden
+
 
 # not gonna make another file for these
+# uses Actor class jump and move
 class PlayableCharacter(Actor):
     def __init__(self) -> None:
         self.position = 0
         self.jump_count = 0
-    # uses parent class jump and move
+
+    def identify(self):
+        print("i am a playable character")
 
 
+# uses Actor class jump and move
 class AICharacter(Actor):
     def __init__(self) -> None:
         self.position = 10
         self.jump_count = 0
-    # uses parent class jump and movE
+
+    def identify(self):
+        print("i am an AI character")
