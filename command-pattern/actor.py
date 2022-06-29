@@ -25,7 +25,8 @@ class PlayableCharacter(Actor):
         self.jump_count = 0
 
     def identify(self):
-        print("i am a playable character")
+        print("i am a playable character. position:",
+              self.position, "jump", self.jump_count)
 
 
 # uses Actor class jump and move
@@ -35,4 +36,5 @@ class AICharacter(Actor):
         self.jump_count = 0
 
     def identify(self):
-        print("i am an AI character")
+        print("i am an AI character. position:",
+              self.position, "jump", self.jump_count)

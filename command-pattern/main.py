@@ -1,4 +1,4 @@
-import command
+# import command
 import actor
 import input_handler
 # this folder contains my attempt/notes at implementing the command design pattern in
@@ -11,10 +11,20 @@ def main():
     character = actor.PlayableCharacter()
     enemy = actor.AICharacter()
 
-    # create actor(s)
-    # create input handler
-    # give commands
-    # check actor(s) states
+    # pretend this is used in a loop that gets inputs from a controller or keyboard
+    game_input = input_handler()
+
+    # this will be used as a cringe controller for the game
+    s = input("input key command")
+    # game loop
+    while(s != ""):
+        # pass 'controller command' to input handler
+        # take user input for move or jump
+        game_input.handle_input(s, character)
+        game_input.handle_input("w", enemy)  # 'ai' input for move
+        # debug
+        character.identify()
+        enemy.identify()
 
 
 if __name__ == "__main__":
