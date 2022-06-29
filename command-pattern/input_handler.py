@@ -5,13 +5,14 @@ import command
 
 class InputHandler():
     def __init__(self) -> None:
-        pass
+        MOVE_COMMAND = 'w'
+        JUMP_COMMAND = ' '
 
     # this method delegates
     def handleInput(self, s, actor):
-        if s == "w":
+        if s == self.MOVECOMMAND:
             # send move command
             command.MoveCommand.execute(actor)
-        elif s == "space" or " ":
+        elif s == self.JUMP_COMMAND:
             # send jump command
             command.JumpCommand.execute(actor)

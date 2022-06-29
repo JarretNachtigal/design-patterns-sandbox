@@ -32,7 +32,7 @@ class Command():
 # called jump_counter by 1
 class JumpCommand(Command):
 
-    # what is this for?
+    # what is this for? maybe key binding in input handler?
     def command():
         pass
 
@@ -45,7 +45,7 @@ class JumpCommand(Command):
 # called position by 1
 class MoveCommand(Command):
 
-    # what is this for?
+    # what is this for? maybe key binding in input handler?
     def command():
         pass
 
