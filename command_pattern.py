@@ -19,7 +19,7 @@ class Command():
 
     # will be overridden
     def command():
-        pass
+        raise NotImplementedError()
 
     # will be overridden
     def execute():
@@ -36,10 +36,6 @@ class JumpCommand(Command):
     def command():
         pass
 
-    # will be overridden
-    def execute():
-        pass
-
 
 # will move a character. for simplicities sake, it will increase an integer
 # called position by 1
@@ -49,10 +45,6 @@ class MoveCommand(Command):
 
     # will be overridden
     def command():
-        pass
-
-    # will be overridden
-    def execute():
         pass
 
 
