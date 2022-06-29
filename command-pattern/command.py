@@ -1,7 +1,5 @@
 import actor
-# this file contains my attempt/notes at implementing the command design pattern in
-# chapter 2 of https://gameprogrammingpatterns.com/contents.html
-# comments will be braindead obvious, but are for note taking purposes
+
 # --------------------------------------------------------------------------------
 # NOTES
 #
@@ -48,15 +46,4 @@ class MoveCommand(Command):
 
     # will be overridden
     def command():
-        pass
-
-
-# this class will be used once per game loop (once thats a thing that I write)
-# and will delegate to the abstracted commands
-class InputHandler():
-    def __init__(self) -> None:
-        pass
-
-    # this method delegates
-    def handleInput():
         pass
