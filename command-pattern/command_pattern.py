@@ -1,3 +1,4 @@
+import actor
 # this file contains my attempt/notes at implementing the command design pattern in
 # chapter 2 of https://gameprogrammingpatterns.com/contents.html
 # comments will be braindead obvious, but are for note taking purposes
@@ -13,6 +14,8 @@
 
 # "represents a triggerable game command"
 # parent class for all game commands
+
+
 class Command():
     def __init__(self) -> None:
         pass
