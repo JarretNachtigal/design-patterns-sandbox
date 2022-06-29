@@ -8,7 +8,13 @@ import input_handler
 
 # main function to be used with this experiment/notes
 def main():
-    print("Hello World!")
+    character = actor.PlayableCharacter()
+    enemy = actor.AICharacter()
+
+    # create actor(s)
+    # create input handler
+    # give commands
+    # check actor(s) states
 
 
 if __name__ == "__main__":

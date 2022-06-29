@@ -40,10 +40,9 @@ class JumpCommand(Command):
     def execute(actor):
         actor.jump()
 
+
 # will move a character. for simplicities sake, it will increase an integer
 # called position by 1
-
-
 class MoveCommand(Command):
 
     # what is this for?
@@ -53,3 +52,16 @@ class MoveCommand(Command):
     # calls the actor specific method
     def execute(actor):
         actor.move()
+
+
+# will move a character. for simplicities sake, it will increase an integer
+# called position by 1
+class IdentifyCommand(Command):
+
+    # what is this for?
+    def command():
+        pass
+
+    # calls the actor specific method
+    def execute(actor):
+        actor.identify()
