@@ -13,6 +13,11 @@ class Actor:
         self.position += 1
         # raise NotImplementedError()  # makes sure its overridden
 
+    # override
+    def moveBackwards(self):
+        self.position += 1
+        # raise NotImplementedError()  # makes sure its overridden
+
     def identify(self):
         raise NotImplementedError()  # makes sure its overridden
 

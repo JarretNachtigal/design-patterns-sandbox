@@ -47,16 +47,12 @@ class MoveBackwardsCommand(Command):
 
     # calls the actor specific method
     def execute(actor):
-        actor.move()
+        actor.moveBackwards()
 
 
 # will move a character. for simplicities sake, it will increase an integer
 # called position by 1
 class IdentifyCommand(Command):
-
-    # what is this for?
-    def command():
-        pass
 
     # calls the actor specific method
     def execute(actor):
