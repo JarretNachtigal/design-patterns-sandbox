@@ -14,7 +14,7 @@ class InputHandler():
         if s == self.MOVE_COMMAND:
             # send move command
             command.MoveCommand.execute(actor)
-        elif s == self.MOVE_BACK_COMMAND or 's':
+        elif s == self.MOVE_BACK_COMMAND:
             # send move backwards command
             command.MoveBackwardsCommand.execute(actor)
         elif s == self.JUMP_COMMAND or 'space':
