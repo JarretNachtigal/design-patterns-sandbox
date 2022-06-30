@@ -42,6 +42,14 @@ class MoveCommand(Command):
         actor.move()
 
 
+# will move a character in reverse, decrease the position integer by 1
+class MoveBackwardsCommand(Command):
+
+    # calls the actor specific method
+    def execute(actor):
+        actor.move()
+
+
 # will move a character. for simplicities sake, it will increase an integer
 # called position by 1
 class IdentifyCommand(Command):
