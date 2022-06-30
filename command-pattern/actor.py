@@ -1,19 +1,17 @@
 # this class will be a parent for all actors in the limited 'game'
+# methods that need to be overrridden can be, but don't need to be
 class Actor:
     position = None
     jump_count = None
 
-    # override
     def jump(self):
         self.jump_count += 1
         # raise NotImplementedError()  # makes sure its overridden
 
-    # override
     def move(self):
         self.position += 1
         # raise NotImplementedError()  # makes sure its overridden
 
-    # override
     def moveBackwards(self):
         self.position += 1
         # raise NotImplementedError()  # makes sure its overridden
