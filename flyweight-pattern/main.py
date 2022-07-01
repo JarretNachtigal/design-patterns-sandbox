@@ -14,8 +14,10 @@ def main():
     rock_two = rock.Rock(shared, 2, 2)
     rock_three = rock.Rock(shared, 3, 3)
     # check all children reference same obj addressof()? or id()?
-
-    pass
+    print(rock_one.shared_resource.get_color)
+    print(rock_two.shared_resource.get_color)
+    print(rock_three.shared_resource.get_color)
+    # they do!
 
 
 if __name__ == "__main__":
