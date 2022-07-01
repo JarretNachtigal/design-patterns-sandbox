@@ -11,3 +11,6 @@ class Rock:
 
     def get_size_modifier(self):
         return self.size_modifier
+
+    def get_shared_resource(self):
+        return self.shared_resource
