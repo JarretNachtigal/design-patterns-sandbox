@@ -3,8 +3,8 @@
 # comments will be braindead obvious, but are for note taking purposes
 
 def main():
-    # create instance of parent to be referenced by all children as a shared resource
-    # create children with parent as param
+    # create instance of shared data object to be referenced by all other objects as a shared resource
+    # create objects with shared data as param
     # check all children reference same obj addressof()? or id()?
 
     pass
