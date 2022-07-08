@@ -7,8 +7,18 @@ class Enemy:
     def do_something():
         print('did something')
 
-    def get_hp(self):
-        return self.hp
+    def clone(self):
+        return Enemy(self.hp(), self.atk())
 
-    def get_atk(self):
-        return self.atk
+# another enemy type
+
+
+class BigEnemy(Enemy):
+
+    # add to parent init
+    def __init__(self, hp, atk, height) -> None:
+        self.height = height
+        super(Enemy, self).__init__(hp, atk)
+
+    def clone(self):
+        return BigEnemy(self.hp(), self.atk(), self.height)
