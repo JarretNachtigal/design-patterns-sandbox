@@ -3,6 +3,11 @@ import enemy
 
 
 def main():
+    # create enemy
+    # create generator(?) for enemies with an enemy prototype
+    # clone enemies
+    # test with others
+
     pass
 
 
