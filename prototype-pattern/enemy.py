@@ -6,3 +6,9 @@ class Enemy:
 
     def do_something():
         print('did something')
+
+    def get_hp(self):
+        return self.hp
+
+    def get_atk(self):
+        return self.atk
