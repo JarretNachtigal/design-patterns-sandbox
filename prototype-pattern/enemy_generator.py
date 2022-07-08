@@ -1,7 +1,7 @@
 import enemy
 
 
-class enemy_generator:
+class EnemyGenerator:
     def __init__(self, prototype: enemy.Enemy) -> None:
         self.prototype = prototype
 
