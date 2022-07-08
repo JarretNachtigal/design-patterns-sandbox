@@ -14,9 +14,8 @@ class Enemy:
         print(self.hp)
         print(self.atk)
 
+
 # another enemy type
-
-
 class BigEnemy(Enemy):
 
     # add to parent init
