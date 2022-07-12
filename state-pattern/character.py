@@ -8,4 +8,3 @@ class Character:
     def __init__(self, hp) -> None:
         self.hp = hp
         self.state = character_state.StandingState()  # character spawns standing
-        pass
