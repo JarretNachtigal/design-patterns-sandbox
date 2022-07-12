@@ -28,28 +28,28 @@ class JumpingState(CharacterState):
         pass
 
     @staticmethod
-    def update(self, character):
+    def update(character):
         print("jump update action")
         pass
 
 
 class DuckingState(CharacterState):
     @staticmethod
-    def handle_input(self, character, input_str):
+    def handle_input(character, input_str):
         pass
 
     @staticmethod
-    def update(self, character):
+    def update(character):
         print("duck update action")
         pass
 
 
 class StandingState(CharacterState):
     @staticmethod
-    def handle_input(self, character, input_str):
+    def handle_input(character, input_str):
         pass
 
     @staticmethod
-    def update(self, character):
+    def update(character):
         print("standing update action")
         pass
