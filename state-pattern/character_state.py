@@ -6,6 +6,8 @@ class CharacterState:
 
     # will be overridden and used to make meaning of the player inputs given
     # the characters current state
+    # it can change the state variable in the character instance to a different
+    # CharacterState subclass if the input requires it
     def handle_input():
         pass
 
@@ -17,15 +19,33 @@ class CharacterState:
 
 # these are the states that the character can be in. The character will hold
 # a state class in an instance variable and delegate the handle input and update calls to it
-
-#
 class JumpingState(CharacterState):
-    pass
+    # this allows me to omit self, remove if i need class variables from the State class
+    # and subclass
+    @staticmethod
+    def handle_input(character, input_str):
+        pass
+
+    @staticmethod
+    def update(self, character):
+        pass
 
 
 class DuckingState(CharacterState):
-    pass
+    @staticmethod
+    def handle_input(self, character, input_str):
+        pass
+
+    @staticmethod
+    def update(self, character):
+        pass
 
 
 class StandingState(CharacterState):
-    pass
+    @staticmethod
+    def handle_input(self, character, input_str):
+        pass
+
+    @staticmethod
+    def update(self, character):
+        pass
