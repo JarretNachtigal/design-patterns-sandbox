@@ -28,6 +28,7 @@ class JumpingState(CharacterState):
 
     @staticmethod
     def update(self, character):
+        print("jump update action")
         pass
 
 
@@ -38,6 +39,7 @@ class DuckingState(CharacterState):
 
     @staticmethod
     def update(self, character):
+        print("duck update action")
         pass
 
 
@@ -48,4 +50,5 @@ class StandingState(CharacterState):
 
     @staticmethod
     def update(self, character):
+        print("standing update action")
         pass
