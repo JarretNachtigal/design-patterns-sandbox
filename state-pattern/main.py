@@ -13,8 +13,8 @@ def main():
     while s != "stop":
         mario.handle_input(mario, s)  # call Character class handle_input()
         mario.update(mario)  # call Character class update()
-        s = input("give me and input - w s or None - stop to stop")
         # get input - duck, jump, return to standing position
+        s = input("give me and input - w s or None - stop to stop")
 
 
 if __name__ == "__main__":
