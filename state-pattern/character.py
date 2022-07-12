@@ -14,3 +14,7 @@ class Character:
         self.static_jumping_state = character_state.JumpingState()
         self.hp = hp
         self.state = self.static_standing_state  # character spawns standing
+
+    def handle_input(self, s):
+        # pass the call along to the current State class
+        self.state.handle_input(self, s)
