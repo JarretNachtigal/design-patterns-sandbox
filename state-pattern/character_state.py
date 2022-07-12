@@ -27,7 +27,10 @@ class JumpingState(CharacterState):
     def handle_input(character, input_str):
         # if none input, return to standing
         # cannot duck
-        pass
+        if input_str == "none":
+            character.state = character.static_standing_state  # swap states
+        else:
+            pass
 
     @staticmethod
     def update(character):
@@ -40,7 +43,12 @@ class DuckingState(CharacterState):
     def handle_input(character, input_str):
         # if none input, return to standing
         # if w, then jump
-        pass
+        if input_str == "none":
+            character.state = character.static_standing_state
+        elif input_str == "w":
+            character.state = character.static_jumping_state
+        else:
+            pass
 
     @staticmethod
     def update(character):
@@ -54,7 +62,12 @@ class StandingState(CharacterState):
         # if none input, stay standing
         # if w input, jump
         # if s input, duck
-        pass
+        if input_str == "w":
+            character.state = character.static_jumping_state
+        elif input_str == "s":
+            character.state = character.static_ducking_state
+        else:
+            pass
 
     @staticmethod
     def update(character):
