@@ -25,6 +25,8 @@ class JumpingState(CharacterState):
     # and subclass
     @staticmethod
     def handle_input(character, input_str):
+        # if none input, return to standing
+        # cannot duck
         pass
 
     @staticmethod
@@ -36,6 +38,8 @@ class JumpingState(CharacterState):
 class DuckingState(CharacterState):
     @staticmethod
     def handle_input(character, input_str):
+        # if none input, return to standing
+        # if w, then jump
         pass
 
     @staticmethod
@@ -47,6 +51,9 @@ class DuckingState(CharacterState):
 class StandingState(CharacterState):
     @staticmethod
     def handle_input(character, input_str):
+        # if none input, stay standing
+        # if w input, jump
+        # if s input, duck
         pass
 
     @staticmethod
