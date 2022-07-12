@@ -14,6 +14,7 @@ class CharacterState:
     # would be called once per game loop, could update graphics(unless that is also decoupled)
     # or other needed actions
     def update():
+        print("parent CharacterState class update action")
         pass
 
 
