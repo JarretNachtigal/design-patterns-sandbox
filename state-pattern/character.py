@@ -17,4 +17,8 @@ class Character:
 
     def handle_input(self, s):
         # pass the call along to the current State class
-        self.state.handle_input(self, s)
+        self.state.handle_input(self, s)  # change state if needed
+
+    def update(self):
+        # move along the next tic of logic given current state
+        self.state.update(self)

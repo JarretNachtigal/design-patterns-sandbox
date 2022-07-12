@@ -9,10 +9,11 @@ def main():
     hp = 2
     mario = character.Character(hp)
     # game loop begin
-    s = input("give me and input - w s or None")
+    s = input("give me and input - w s or None - stop to stop")
     while s != "stop":
         mario.handle_input(mario, s)  # call Character class handle_input()
-        pass
+        mario.update(mario)  # call Character class update()
+        s = input("give me and input - w s or None - stop to stop")
         # get input - duck, jump, return to standing position
 
 
