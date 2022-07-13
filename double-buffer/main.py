@@ -20,3 +20,5 @@ if __name__ == "__main__":
 # - We want to be able to read the state and we don’t want to have to wait while it’s being written."
 
 # "no code can access either state while they are being swapped."
+
+# more memory intensive, as there must be 2 copies of the state
