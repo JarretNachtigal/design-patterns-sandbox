@@ -13,6 +13,7 @@ class Screen:
         self.swap()
 
     # swap current and next, clear next
+    # called from Screen.draw() method
     def swap(self):
         # swap
         self.current_buffer, self.next_buffer = self.next_buffer, self.current_buffer
