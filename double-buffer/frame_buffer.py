@@ -1,3 +1,4 @@
 # pretends to do frame things
 class FrameBuffer:
-    pass
+    def __init__(self):
+        self.data = "this is data"
