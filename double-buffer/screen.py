@@ -9,3 +9,6 @@ class Screen:
 
     def draw():
         pass
+
+    def swap():
+        pass
