@@ -5,6 +5,7 @@ import screen
 
 def main():
     buffer = frame_buffer.FrameBuffer()
+    print(buffer.get_buffer())
     pass
 
 
