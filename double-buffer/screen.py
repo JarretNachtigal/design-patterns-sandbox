@@ -4,11 +4,16 @@ import frame_buffer
 
 class Screen:
     def __init__(self):
-        current_buffer = frame_buffer.FrameBuffer()
-        next_buffer = frame_buffer.FrameBuffer()
+        self.current_buffer = frame_buffer.FrameBuffer()
+        self.next_buffer = frame_buffer.FrameBuffer()
 
-    def draw():
-        pass
+    # this method would be used to draw all pixels into the next frame
+    def draw(self, data):
+        self.next_buffer.draw(data)
 
-    def swap():
-        pass
+    # swap current and next, clear next
+    def swap(self):
+        # swap
+        self.current_buffer, self.next_buffer = self.next_buffer, self.current_buffer
+        # clear next
+        self.next_buffer.clear()
