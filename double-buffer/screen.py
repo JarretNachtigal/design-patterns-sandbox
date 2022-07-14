@@ -33,6 +33,8 @@ class Screen:
         # draw current buffer
         self.draw_to_screen()  # => "first swap data"
         # fill next buffer
-        self.draw_to_next("first swap data")
+        self.draw_to_next("2nd swap data")
         # swap
         self.swap()
+        # draw current buffer
+        self.draw_to_screen()  # => "2nd swap data"
