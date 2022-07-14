@@ -1,5 +1,10 @@
 # this file contains the main method for the double buffer pattern
+import frame_buffer
+import screen
+
+
 def main():
+    buffer = frame_buffer.FrameBuffer()
     pass
 
 
