@@ -7,7 +7,7 @@ class FrameBuffer:
         self.data = "cleared"
 
     def draw(self, data):
-        pass
+        self.data = data
 
     def get_buffer(self):
         return self.data
