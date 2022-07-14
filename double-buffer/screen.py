@@ -22,12 +22,4 @@ class Screen:
 
     # this method tests
     def test_actions(self):
-        self.next_buffer.draw("this was the next buffer")  # setup next buffer
-        print(self.current_buffer.get_buffer())  # initial current_buffer
-        self.draw()  # initial current buffer state
-        # should say 'this was the next buffer'
-        print(self.current_buffer.get_buffer())
-        self.next_buffer.draw("this is the next buffer after the 2nd swap")
-        self.draw()
-        # should say 'this was the next buffer before the 2nd swap'
-        print(self.current_buffer.get_buffer())
+        pass
