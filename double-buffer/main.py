@@ -4,9 +4,10 @@ import screen
 
 
 def main():
-    buffer = frame_buffer.FrameBuffer()
-    print(buffer.get_buffer())
-    pass
+    screen_buffer = screen.Screen()
+    # print initial data in current buffer
+    screen_buffer.test_actions()
+    # hard code draw params for test
 
 
 if __name__ == "__main__":

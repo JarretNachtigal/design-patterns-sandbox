@@ -10,6 +10,7 @@ class Screen:
     # this method would be used to draw all pixels into the next frame
     def draw(self, data):
         self.next_buffer.draw(data)
+        self.swap()
 
     # swap current and next, clear next
     def swap(self):
@@ -17,3 +18,8 @@ class Screen:
         self.current_buffer, self.next_buffer = self.next_buffer, self.current_buffer
         # clear next
         self.next_buffer.clear()
+
+    # this method tests
+    def test_actions(self):
+        self.next_buffer.draw("this was the next buffer")  # setup next buffer
+        self.draw()  # initial current buffer state
