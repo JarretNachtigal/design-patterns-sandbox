@@ -8,3 +8,6 @@ class FrameBuffer:
 
     def draw(self, data):
         pass
+
+    def get_buffer(self):
+        return self.data
