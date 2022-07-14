@@ -5,9 +5,8 @@ import screen
 
 def main():
     screen_buffer = screen.Screen()
-    # print initial data in current buffer
+    # call test method in screen.py
     screen_buffer.test_actions()
-    # hard code draw params for test
 
 
 if __name__ == "__main__":
