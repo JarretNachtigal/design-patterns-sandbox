@@ -3,7 +3,7 @@
 # for each tic of in game time
 # in prebuild engines like unity, this is already implemented and needs to
 # be worked with correctly
-
+# "variable / fluid time step" - does not account for multiplayer with 2 different machine specs
 
 def main():
     # this needs to run (asynchoronously???)
