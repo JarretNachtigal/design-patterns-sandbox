@@ -87,3 +87,4 @@ if __name__ == "__main__":
 # Variable time step: - main()
 # Fixed update time step, variable rendering: - main_loop_two()
 # - render can probably also be fixed in the same way to implement locked FPS
+# 60 FPS - 16.6 repeating MS_PER_UPDATE
