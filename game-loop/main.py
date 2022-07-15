@@ -32,7 +32,7 @@ def main():
 # the rendering and input processing happen every tic, the game state update does not
 # used to sync game time with real time between different machines in a multiplayer game
 def main_loop_two():
-    MS_PER_UPDATE = 10
+    MS_PER_UPDATE = 16.6  # (repeating) 60 FPS
 
     # this needs to run (asynchoronously???)
     # - update and render should not wait for process input / game time should not wait for a user to input
