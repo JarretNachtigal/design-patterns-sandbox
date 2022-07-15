@@ -32,6 +32,8 @@ def main():
 # the rendering and input processing happen every tic, the game state update does not
 # used to sync game time with real time between different machines in a multiplayer game
 def main_loop_two():
+    MS_PER_UPDATE = 10
+
     # this needs to run (asynchoronously???)
     # - update and render should not wait for process input / game time should not wait for a user to input
 
@@ -55,7 +57,8 @@ def main_loop_two():
     # update(time_elapsed)  # state pattern?
     # end loop
 
-    render()  # double buffer?
+    # double buffer? - params used to keep time consistant between update calls
+    render(lag / MS_PER_UPDATE)
 
 
 # update the game state based on time elapsed since last call
@@ -73,3 +76,13 @@ def process_input():
 
 if __name__ == "__main__":
     main()
+
+
+# the 4 examples from the reading
+
+# Fixed time step with no synchronization:
+# - loop, process, update, render, no sleep()
+# Fixed time step with synchronization:
+# - same as before with sleep(start + MS_PER_FRAME - getCurrentTime())
+# Variable time step: - main()
+# Fixed update time step, variable rendering: - main_loop_two()
