@@ -86,3 +86,4 @@ if __name__ == "__main__":
 # - same as before with sleep(start + MS_PER_FRAME - getCurrentTime())
 # Variable time step: - main()
 # Fixed update time step, variable rendering: - main_loop_two()
+# - render can probably also be fixed in the same way to implement locked FPS
