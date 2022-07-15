@@ -30,6 +30,7 @@ def main():
 
 # this version has a fixed time step - decouple render and update timing
 # the rendering and input processing happen every tic, the game state update does not
+# used to sync game time with real time between different machines in a multiplayer game
 def main_loop_two():
     # this needs to run (asynchoronously???)
     # - update and render should not wait for process input / game time should not wait for a user to input
