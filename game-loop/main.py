@@ -47,16 +47,14 @@ def main_loop_two():
     last_time = current_time
     lag += time_elapsed  # sync ingame and real world time
 
-    process_input()
+    process_input()  # every tic
 
+    # fixed step
     # while(lag >= MS_PER_UPDATE)
-    update(time_elapsed)  # state pattern?
+    # update(time_elapsed)  # state pattern?
     # end loop
 
     render()  # double buffer?
-
-    # sleep for needed amount of time to keep frame rate where
-    # it needs it - depends on how long the loop takes to run compared to time at beginning
 
 
 # update the game state based on time elapsed since last call
