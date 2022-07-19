@@ -14,3 +14,5 @@
 # "If A comes before B in the list of objects, then when A updates, it will see B’s previous state. "
 # "But when B updates, it will see A’s new state, since A has already been updated this frame."
 # OR - double buffer
+
+# each class will have or inherit an update() method
