@@ -10,3 +10,7 @@
 # - Your game has a number of objects or systems that need to run simultaneously.
 # - Each object’s behavior is mostly independent of the others.
 # - The objects need to be simulated over time."
+
+# "If A comes before B in the list of objects, then when A updates, it will see B’s previous state. "
+# "But when B updates, it will see A’s new state, since A has already been updated this frame."
+# OR - double buffer
