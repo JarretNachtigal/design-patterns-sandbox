@@ -16,3 +16,10 @@
 # OR - double buffer
 
 # each class will have or inherit an update() method
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
