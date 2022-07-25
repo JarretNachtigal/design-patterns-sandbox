@@ -15,14 +15,14 @@ class Character:
     @staticmethod
     def setHealth(character, change_val):
         character.hp += change_val
-        return character
+        return 1
 
     @staticmethod
     def setAtk(character, change_val):
         character.atk += change_val
-        return character
+        return 1
 
     @staticmethod
     def setDefence(character, change_val):
         character.defence += change_val
-        return character
+        return 1
