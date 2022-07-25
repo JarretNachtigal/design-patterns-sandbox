@@ -1,4 +1,3 @@
-import character
 import vm
 
 # this pattern involves creating building blocks that can be controlled
@@ -16,11 +15,9 @@ import vm
 
 def main():
     # create characters
-    ch_one = character.Character(10, 2, 1)
-    ch_two = character.Character(20, 3, 2)
 
     # the user input - kinda pretend for now
-    input = ["a", "c", "b"]  # ch_one basic attack ch_two
+    basic_attack = ["a", "c", "b"]  # ch_one basic attack ch_two
 
     machine = vm.VM()
     machine.interpret()  # takes the stack, executes intructions
