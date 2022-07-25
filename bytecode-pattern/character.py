@@ -9,20 +9,26 @@ class Character:
         self.atk = atk
         self.defence = defence
 
-    def setHealth(self, hp):
-        self.hp = hp
+    @staticmethod
+    def setHealth(character, hp):
+        character.hp = hp
 
+    @staticmethod
     def setAtk(character, atk):
         character.atk = atk
 
-    def setDefence(self, defense):
-        self.defence = defense
+    @staticmethod
+    def setDefence(character, defense):
+        character.defence = defense
 
-    def getHealth(self):
-        return self.hp
+    @staticmethod
+    def getHealth(character):
+        return character.hp
 
-    def getAtk(self):
-        return self.atk
+    @staticmethod
+    def getAtk(character):
+        return character.atk
 
-    def getDefence(self):
-        return self.defence
+    @staticmethod
+    def getDefence(character):
+        return character.defence

@@ -17,6 +17,10 @@ def main():
     # the user input - kinda pretend for now
     # something will have to generate this in practice
     basic_attack = ["a", "c", "b"]  # ch_one basic attack ch_two
+    # push 0 (char index) onto stack
+    # get character 0 atk
+    # push it onto stack
+    # push
 
     machine = vm.VM()
     machine.interpret(basic_attack)  # takes the list of stack instructions

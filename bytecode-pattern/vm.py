@@ -27,7 +27,7 @@ class VM:
                              "i": "PLAY_SOUND_HEAL",
                              "j": "INST_LITERAL"}
 
-    # switch case of self.instructions
+    # if else for self.instructions and instructions_list - bytecode from user
     def interpret(self, instructions_list):
         # loop though given instructions_list bytecode
         for i, bytecode in enumerate(instructions_list):
@@ -50,17 +50,24 @@ class VM:
                 # grab wizard index off of stack
                 pass
             elif instruction == "SET_ATK":
-                # grab wizard index off of stack
-
+                # grab character index off of stack
+                index = self.stack_instance.pop()
+                character = self.characters[index]
                 pass
             elif instruction == "GET_ATK":
-                # grab wizard index off of stack
+                # grab character index off of stack
+                index = self.stack_instance.pop()
+                character = self.characters[index]
                 pass
             elif instruction == "SET_DEFENSE":
-                # grab wizard index off of stack
+                # grab character index off of stack
+                index = self.stack_instance.pop()
+                character = self.characters[index]
                 pass
             elif instruction == "GET_DEFENSE":
-                # grab wizard index off of stack
+                # grab character index off of stack
+                index = self.stack_instance.pop()
+                character = self.characters[index]
                 pass
             elif instruction == "PLAY_SOUND_DAMAGE":
                 # pretend to make game sounds
