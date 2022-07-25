@@ -11,11 +11,12 @@ import character
 
 
 def main():
-    instructions = []
+    instructions = []  # the user input - kinda pretend for now
     ch_one = character.Character(10, 2, 1)
     ch_two = character.Character(20, 3, 2)
     stack_instance = stack.Stack()
-    pass
+
+    stack_instance.handle_input()  # pass the instructions to the stack
 
 
 if __name__ == "__main__":

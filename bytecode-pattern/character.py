@@ -2,8 +2,6 @@
 # atk, hp, defence
 # to interface with the stack instructions, it will heve general methods to manipulating
 # its stats/state
-from re import L
-
 
 class Character:
     def __init__(self, hp, atk, defence) -> None:
@@ -16,12 +14,15 @@ class Character:
 
     @staticmethod
     def setHealth(character, change_val):
+        character.hp += change_val
         return character
 
     @staticmethod
-    def setHp(character, change_val):
+    def setAtk(character, change_val):
+        character.atk += change_val
         return character
 
     @staticmethod
     def setDefence(character, change_val):
+        character.defence += change_val
         return character
