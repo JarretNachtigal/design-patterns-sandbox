@@ -22,6 +22,26 @@ def main():
     # push it onto stack
     # push
 
+    # TESTS
+    # ch_one attack ch_two
+    # ch_two attack ch_one
+    # ch_one debuff ch_two atk
+    # ch_two debuff ch_one atk
+    # ch_one debuff ch_two def
+    # ch_two debuff ch_one def
+    # ch_one buff ch_two atk
+    # ch_two buff ch_one atk
+    # ch_one buff ch_two def
+    # ch_two buff ch_one def
+    # ch_one buff own atk
+    # ch_two buff own atk
+    # ch_one buff own def
+    # ch_two buff own def
+    # ch_one heal ch_two
+    # ch_two heal ch_one
+    # ch_one heal self
+    # ch_two heal self
+
     machine = vm.VM()
     machine.interpret(basic_attack)  # takes the list of stack instructions
 

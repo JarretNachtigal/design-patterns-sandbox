@@ -1,3 +1,4 @@
+from argparse import Namespace
 import stack
 import character
 
@@ -7,7 +8,7 @@ import character
 
 
 class VM:
-    def __init__(self, ch_one, che_two) -> None:
+    def __init__(self) -> None:
         # instruction set corresponding to stack input
         self.ch_one = character.Character(10, 2, 1)
         self.ch_two = character.Character(20, 3, 2)
