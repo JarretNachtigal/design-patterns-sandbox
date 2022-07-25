@@ -9,14 +9,14 @@ class Character:
         self.atk = atk
         self.defence = defence
 
-    def setHealth(self, change_val):
-        self.hp += change_val
+    def setHealth(self, hp):
+        self.hp = hp
 
-    def setAtk(character, change_val):
-        character.atk += change_val
+    def setAtk(character, atk):
+        character.atk = atk
 
-    def setDefence(self, change_val):
-        self.defence += change_val
+    def setDefence(self, defense):
+        self.defence = defense
 
     def getHealth(self):
         return self.hp

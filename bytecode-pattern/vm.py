@@ -11,13 +11,21 @@ class VM:
         # instruction set corresponding to stack input
         self.ch_one = character.Character(10, 2, 1)
         self.ch_two = character.Character(20, 3, 2)
+        # list of characters so that they can be indexed
+        self.characters = [self.ch_one, self.ch_two]
+        # create stack
         self.stack_instance = stack.Stack()
         # list of valid vm instructions and corresponding 'bytecode' (letter)
         self.instructions = {"a": "SET_CHARACTER",
-                             "c": "SET_HP",
-                             "d": "PLAY_SOUND_DAMAGE",
-                             "e": "PLAY_SOUND_HEAL",
-                             "f": "INST_LITERAL"}
+                             "b": "SET_HP",
+                             "c": "GET_HP",
+                             "d": "SET_ATK",
+                             "e": "GET_ATK",
+                             "f": "SET_DEFENSE",
+                             "g": "GET_DEFENSE",
+                             "h": "PLAY_SOUND_DAMAGE",
+                             "i": "PLAY_SOUND_HEAL",
+                             "j": "INST_LITERAL"}
 
     # switch case of self.instructions
     def interpret(self, instructions_list):
@@ -28,28 +36,42 @@ class VM:
 
             if instruction == "SET_CHARACTER":  # push 0 or 1 onto stack
                 self.stack_instance.push(instructions_list[i+1])
-                # remove from instructions list to prevent breaking the ifelse
-                del instructions_list[i+1]
+                # skip number index in loop
+                i += 1
             elif instruction == "SET_HP":
-                pass
+                # grab change_val off of stack
+                change_val = self.stack_instance.pop()
+                # grab character index off of stack
+                index = self.stack_instance.pop()
+                character = self.characters[index]
+                # send the change_val to character method
+                character.setHealth(change_val)
             elif instruction == "GET_HP":
+                # grab wizard index off of stack
                 pass
             elif instruction == "SET_ATK":
+                # grab wizard index off of stack
+
                 pass
             elif instruction == "GET_ATK":
+                # grab wizard index off of stack
                 pass
             elif instruction == "SET_DEFENSE":
+                # grab wizard index off of stack
                 pass
             elif instruction == "GET_DEFENSE":
+                # grab wizard index off of stack
                 pass
             elif instruction == "PLAY_SOUND_DAMAGE":
+                # pretend to make game sounds
                 print("imaginary damage sounds")
             elif instruction == "PLAY_SOUND_HEAL":
+                # pretend to make game sounds
                 print("imaginary heal sounds")
             elif instruction == "INST_LITERAL":
                 # add next instruction to stack as an int
                 self.stack_instance.push(instructions_list[i+1])
-                # remove from instructions list to prevent breaking the ifelse
-                del instructions_list[i+1]
+                # skip number index in loop
+                i += 1
             else:
                 print("broken :)")
