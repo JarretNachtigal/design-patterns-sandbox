@@ -8,3 +8,9 @@ class Stack:
 
     def push(self, value):
         self.data.append(value)
+
+    # remove top value from 'stack' and return it
+    def pop(self):
+        val = self.data[len(self.data)-1]
+        self.data.remove(len(self.data)-1)
+        return val
