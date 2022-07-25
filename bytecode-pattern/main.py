@@ -1,4 +1,5 @@
 import stack
+import character
 
 # this pattern involves creating building blocks that can be controlled
 # with bytecode
@@ -11,6 +12,8 @@ import stack
 
 def main():
     instructions = []
+    ch_one = character.Character(10, 2, 1)
+    ch_two = character.Character(20, 3, 2)
     stack_instance = stack.Stack()
     pass
 
