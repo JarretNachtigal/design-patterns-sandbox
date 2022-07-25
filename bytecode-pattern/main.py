@@ -1,4 +1,3 @@
-import stack
 import character
 import vm
 
@@ -10,26 +9,21 @@ import vm
 # behavior by manipulating the stack at runtime
 # 2 characters will be used to demonstrate
 
-# a - ch_one
-# b - ch_two
-# c - sethp
+# self.instructions = {"c": "SET_HP",
+#                      "d": "PLAY_SOUND_DAMAGE",
+#                      "e": "PLAY_SOUND_HEAL"}
 
 
 def main():
-    instructions = {"c": "SET_HP",
-                    "d": "PLAY_SOUND_DAMAGE",
-                    "e": "PLAY_SOUND_HEAL"}
-
+    # create characters
     ch_one = character.Character(10, 2, 1)
     ch_two = character.Character(20, 3, 2)
 
     # the user input - kinda pretend for now
     input = ["a", "c", "b"]  # ch_one basic attack ch_two
 
-    stack_instance = stack.Stack()
-
     machine = vm.VM()
-    machine.interpret(stack_instance)  # takes the stack, executes intructions
+    machine.interpret()  # takes the stack, executes intructions
 
 
 if __name__ == "__main__":
