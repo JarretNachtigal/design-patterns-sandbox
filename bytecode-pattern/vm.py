@@ -3,3 +3,6 @@
 class VM:
     def __init__(self) -> None:
         pass
+
+    def interpret(self, bytecode_stack):
+        pass
