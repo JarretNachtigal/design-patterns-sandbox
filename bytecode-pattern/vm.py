@@ -27,7 +27,7 @@ class VM:
                              "i": "PLAY_SOUND_HEAL",
                              "j": "INST_LITERAL"}
 
-    # if else for self.instructions and instructions_list - bytecode from user
+    # if else for self.instructions and instructions_list - bytecode from
     def interpret(self, instructions_list):
         # loop though given instructions_list bytecode
         for i, bytecode in enumerate(instructions_list):
@@ -43,31 +43,34 @@ class VM:
                 change_val = self.stack_instance.pop()
                 # grab character index off of stack
                 index = self.stack_instance.pop()
-                character = self.characters[index]
-                # send the change_val to character method
-                character.setHealth(change_val)
+                # get character current hp
+                # math
+                # set character hp
+                pass
             elif instruction == "GET_HP":
-                # grab wizard index off of stack
+                # grab character index off of stack
+                # get character from index
+                # push character hp onto stack
                 pass
             elif instruction == "SET_ATK":
                 # grab character index off of stack
                 index = self.stack_instance.pop()
-                character = self.characters[index]
                 pass
             elif instruction == "GET_ATK":
                 # grab character index off of stack
                 index = self.stack_instance.pop()
-                character = self.characters[index]
+                # get character from index
+                # push character atk onto stack
                 pass
             elif instruction == "SET_DEFENSE":
                 # grab character index off of stack
                 index = self.stack_instance.pop()
-                character = self.characters[index]
                 pass
             elif instruction == "GET_DEFENSE":
                 # grab character index off of stack
                 index = self.stack_instance.pop()
-                character = self.characters[index]
+                # get character from index
+                # push character defense onto stack
                 pass
             elif instruction == "PLAY_SOUND_DAMAGE":
                 # pretend to make game sounds

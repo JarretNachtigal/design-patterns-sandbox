@@ -4,10 +4,10 @@
 # its stats/state
 
 class Character:
-    def __init__(self, hp, atk, defence) -> None:
+    def __init__(self, hp, atk, defense) -> None:
         self.hp = hp
         self.atk = atk
-        self.defence = defence
+        self.defense = defense
 
     @staticmethod
     def setHealth(character, hp):
@@ -18,8 +18,8 @@ class Character:
         character.atk = atk
 
     @staticmethod
-    def setDefence(character, defense):
-        character.defence = defense
+    def setDefense(character, defense):
+        character.defense = defense
 
     @staticmethod
     def getHealth(character):
@@ -30,5 +30,5 @@ class Character:
         return character.atk
 
     @staticmethod
-    def getDefence(character):
-        return character.defence
+    def getDefense(character):
+        return character.defense
