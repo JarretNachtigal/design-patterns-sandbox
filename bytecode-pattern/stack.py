@@ -14,3 +14,8 @@ class Stack:
         val = self.data[len(self.data)-1]
         self.data.remove(len(self.data)-1)
         return val
+
+    # this method takes the list of instructions and parses them into the stack
+    # uses push and pop
+    def handle_input(self, instructions):
+        pass
