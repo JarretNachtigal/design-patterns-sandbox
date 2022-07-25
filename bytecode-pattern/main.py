@@ -14,13 +14,12 @@ import vm
 
 
 def main():
-    # create characters
-
     # the user input - kinda pretend for now
+    # something will have to generate this in practice
     basic_attack = ["a", "c", "b"]  # ch_one basic attack ch_two
 
     machine = vm.VM()
-    machine.interpret()  # takes the stack, executes intructions
+    machine.interpret(basic_attack)  # takes the list of stack instructions
 
 
 if __name__ == "__main__":

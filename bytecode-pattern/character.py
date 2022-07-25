@@ -9,20 +9,20 @@ class Character:
         self.atk = atk
         self.defence = defence
 
-    # these methods will take a character to manipulate as an argument rather
-    # than useing self
+    def setHealth(self, change_val):
+        self.hp += change_val
 
-    @staticmethod
-    def setHealth(character, change_val):
-        character.hp += change_val
-        return 1
-
-    @staticmethod
     def setAtk(character, change_val):
         character.atk += change_val
-        return 1
 
-    @staticmethod
-    def setDefence(character, change_val):
-        character.defence += change_val
-        return 1
+    def setDefence(self, change_val):
+        self.defence += change_val
+
+    def getHealth(self):
+        return self.hp
+
+    def getAtk(self):
+        return self.atk
+
+    def getDefence(self):
+        return self.defence
