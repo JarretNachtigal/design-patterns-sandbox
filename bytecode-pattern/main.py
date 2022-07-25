@@ -11,6 +11,7 @@ import stack
 
 def main():
     instructions = []
+    stack_instance = stack.Stack()
     pass
 
 
