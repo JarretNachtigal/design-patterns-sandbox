@@ -13,3 +13,4 @@
 # "For example, to let a power play sounds, we could add these directly to Superpower"
 # "But if Superpower is already getting large and unwieldy, we might want to avoid that.
 # Instead, we create a SoundPlayer class that exposes that functionality"
+# - then instantiate sound_player in superpower parent and create getSoundPlayer()
