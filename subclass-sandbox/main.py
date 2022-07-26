@@ -3,3 +3,6 @@
 # - Every part of the game engine will get coupled to these classes.
 # - When these outside systems need to change, odds are good some random superpower code will get broken.
 # - It’s hard to define invariants that all superpowers obey."
+
+# "We do (this) by making these operations protected methods of the Superpower base class.
+# this = What we want is to give each of the gameplay programmers who is implementing a superpower a set of primitives they can play with.""
