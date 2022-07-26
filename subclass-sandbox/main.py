@@ -6,3 +6,6 @@
 
 # "We do (this) by making these operations protected methods of the Superpower base class.
 # this = What we want is to give each of the gameplay programmers who is implementing a superpower a set of primitives they can play with.""
+
+# "This pattern leads to an architecture where you have a shallow but wide class hierarchy.
+# Your inheritance chains aren’t deep, but there are a lot of classes that hang off Superpower. "
