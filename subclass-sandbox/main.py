@@ -9,3 +9,7 @@
 
 # "This pattern leads to an architecture where you have a shallow but wide class hierarchy.
 # Your inheritance chains aren’t deep, but there are a lot of classes that hang off Superpower. "
+
+# "For example, to let a power play sounds, we could add these directly to Superpower"
+# "But if Superpower is already getting large and unwieldy, we might want to avoid that.
+# Instead, we create a SoundPlayer class that exposes that functionality"
