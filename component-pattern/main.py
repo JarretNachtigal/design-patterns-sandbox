@@ -52,27 +52,20 @@ def main():
     graphics = GraphicsComponent
     physics = PhysicsComponent
     sound = SoundsComponent
-    character = Character()
+    # can also take InputComponent
+    character = GameObject(physics, graphics, sound)
     pass
 
 
 if __name__ == "__main__":
     main()
 
-# generic GameObject class - should replace Character in more mature implementation
-
-
-class GameObject:
-    def __init__(self) -> None:
-        pass
-    pass
-
 
 class PhysicsComponent:
     def __init__(self) -> None:
         pass
 
-    def update():
+    def update(self):
         pass
 
 
@@ -80,7 +73,7 @@ class GraphicsComponent:
     def __init__(self) -> None:
         pass
 
-    def update():
+    def update(self):
         pass
 
 
@@ -88,13 +81,12 @@ class SoundsComponent:
     def __init__(self) -> None:
         pass
 
-    def update():
+    def update(self):
         pass
 
-# this can be changed to generic GameObject instance
 
-
-class Character(GameObject):
+# used to instantiate any object
+class GameObject:
     # each of these will be implemented and give their own update()
     def __init__(self, physics_component, graphics_component, sounds_component):
         # character specific values
@@ -107,8 +99,8 @@ class Character(GameObject):
         self.graphics_component = graphics_component
         self.sounds_component = sounds_component
 
-    def update():
-        # physics_component.update()
-        # graphics_component.update()
-        # sounds_component.update()
+    def update(self):
+        self.physics_component.update()
+        self.graphics_component.update()
+        self.sounds_component.update()
         pass
