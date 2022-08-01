@@ -15,3 +15,11 @@
 
 # class Character will have an instance of PhysicsComponent, GraphicsComponent and delegate to them
 # when needed inside the update() method
+
+# "The Character class now basically does two things:
+# - it holds the set of components that actually define it, and it holds the state that is shared across multiple domains.
+# Position and velocity are still in the core Bjorn class for two reasons.
+# First, they are “pan-domain” state — almost every component will make use of them,
+# so it isn’t clear which component should own them if we did want to push them down.
+#  - "Secondly, and more importantly, it gives us an easy way for the components to communicate
+# without being coupled to each other."
