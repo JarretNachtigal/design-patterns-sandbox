@@ -46,3 +46,10 @@
 # or some other bug
 # it creates coupling, but there is also the option of giving the components references to eachother
 # or Mediator pattern/ messaging event queue between them
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
