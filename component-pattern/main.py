@@ -23,3 +23,14 @@
 # so it isn’t clear which component should own them if we did want to push them down.
 #  - "Secondly, and more importantly, it gives us an easy way for the components to communicate
 # without being coupled to each other."
+
+# next step
+
+# "So far, we’ve pushed our behavior out to separate component classes, but we haven’t abstracted the behavior out.
+# Bjorn still knows the exact concrete classes where his behavior is defined. Let’s change that.
+# "We’ll take our component for handling user input and hide it behind an interface.
+# We’ll turn InputComponent into an abstract base class"
+
+# - essentially create an abstract class and and a concrete on PlayerInputComponent (extend) InputComponent <- (abstract)
+# the Character class will send itself to the interfaced InputComponent which will have an update method
+# def update(Character: character)
