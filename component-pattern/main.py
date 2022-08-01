@@ -34,3 +34,4 @@
 # - essentially create an abstract class and and a concrete on PlayerInputComponent (extend) InputComponent <- (abstract)
 # the Character class will send itself to the interfaced InputComponent which will have an update method
 # def update(Character: character)
+# components created this way are instantiated outside Character and passed in as params on creation
