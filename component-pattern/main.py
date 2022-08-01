@@ -8,3 +8,7 @@
 
 # "A single entity spans multiple domains."
 # "The entity is reduced to a simple container of components."
+
+# "The Component pattern adds a good bit of complexity over simply making a class and putting code in it.
+# Each conceptual “object” becomes a cluster of objects that must be instantiated, initialized, and correctly wired together.
+# Communication between the different components becomes more challenging, and controlling how they occupy memory is more complex."
