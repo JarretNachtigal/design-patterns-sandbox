@@ -94,6 +94,7 @@ class GameObject:
         self.y_pos = 0
         self.z_pos = 0
         self.velocity = 0
+        self.direction = 0
 
         self.physics_component = physics_component
         self.graphics_component = graphics_component
