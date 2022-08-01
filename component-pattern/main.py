@@ -44,3 +44,5 @@
 
 # the update() in the gameobject needs to care about the order of component.update() calls, or it may render data from last frame
 # or some other bug
+# it creates coupling, but there is also the option of giving the components references to eachother
+# or Mediator pattern/ messaging event queue between them
