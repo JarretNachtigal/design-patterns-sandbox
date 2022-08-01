@@ -35,3 +35,4 @@
 # the Character class will send itself to the interfaced InputComponent which will have an update method
 # def update(Character: character)
 # components created this way are instantiated outside Character and passed in as params on creation
+# this allows different inputcomponents to be used in the character ex: DemoInputController for the menu screen demo or a cpu
