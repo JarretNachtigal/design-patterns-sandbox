@@ -37,5 +37,10 @@
 # components created this way are instantiated outside Character and passed in as params on creation
 # this allows different inputcomponents to be used in the character ex: DemoInputController for the menu screen demo or a cpu
 
-# after this, the Character class can be rebranded as a GameObject class with component interfaces, as most of its
+# after this, the Character class can be rebranded as a generic GameObject class holding component interfaces, as most of its
 # behavior is defined in its components (other than position and velocity or other things needed to be shared between components)
+
+# can used a factory method bjorn = GameObject.create_bjorn(#components) - returns GameObject bjorn
+
+# the update() in the gameobject needs to care about the order of component.update() calls, or it may render data from last frame
+# or some other bug
