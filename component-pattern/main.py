@@ -36,3 +36,6 @@
 # def update(Character: character)
 # components created this way are instantiated outside Character and passed in as params on creation
 # this allows different inputcomponents to be used in the character ex: DemoInputController for the menu screen demo or a cpu
+
+# after this, the Character class can be rebranded as a GameObject class with component interfaces, as most of its
+# behavior is defined in its components (other than position and velocity or other things needed to be shared between components)
