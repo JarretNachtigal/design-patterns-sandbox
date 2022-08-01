@@ -47,7 +47,12 @@
 # it creates coupling, but there is also the option of giving the components references to eachother
 # or Mediator pattern/ messaging event queue between them
 
+
 def main():
+    graphics = GraphicsComponent
+    physics = PhysicsComponent
+    sound = SoundsComponent
+    character = Character()
     pass
 
 
@@ -62,12 +67,36 @@ class GameObject:
         pass
     pass
 
+
+class PhysicsComponent:
+    def __init__(self) -> None:
+        pass
+
+    def update():
+        pass
+
+
+class GraphicsComponent:
+    def __init__(self) -> None:
+        pass
+
+    def update():
+        pass
+
+
+class SoundsComponent:
+    def __init__(self) -> None:
+        pass
+
+    def update():
+        pass
+
 # this can be changed to generic GameObject instance
 
 
 class Character(GameObject):
     # each of these will be implemented and give their own update()
-    def __init__(self, physics_component, graphics_component, sound_component):
+    def __init__(self, physics_component, graphics_component, sounds_component):
         # character specific values
         self.x_pos = 0
         self.y_pos = 0
@@ -76,10 +105,10 @@ class Character(GameObject):
 
         self.physics_component = physics_component
         self.graphics_component = graphics_component
-        self.sound_component = sound_component
+        self.sounds_component = sounds_component
 
     def update():
         # physics_component.update()
         # graphics_component.update()
-        # sound_component.update()
+        # sounds_component.update()
         pass
