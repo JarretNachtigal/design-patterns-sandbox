@@ -12,3 +12,6 @@
 # "The Component pattern adds a good bit of complexity over simply making a class and putting code in it.
 # Each conceptual “object” becomes a cluster of objects that must be instantiated, initialized, and correctly wired together.
 # Communication between the different components becomes more challenging, and controlling how they occupy memory is more complex."
+
+# class Character will have an instance of PhysicsComponent, GraphicsComponent and delegate to them
+# when needed inside the update() method
