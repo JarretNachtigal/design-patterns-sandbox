@@ -7,3 +7,4 @@
 # A zone is the opposite, and a prop has both components."
 
 # "A single entity spans multiple domains."
+# "The entity is reduced to a simple container of components."
