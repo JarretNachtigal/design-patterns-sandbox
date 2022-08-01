@@ -53,3 +53,30 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# generic GameObject class - should replace Character in more mature implementation
+
+
+class GameObject:
+    def __init__(self) -> None:
+        pass
+    pass
+
+# this can be changed to generic GameObject instance
+
+
+class Character(GameObject):
+
+    def __init__(self, physics_component, graphics_component, sound_component):
+        # character specific values
+        self.x_pos = 0
+        self.y_pos = 0
+        self.z_pos = 0
+        self.velocity = 0
+
+        self.physics_component = physics_component
+        self.graphics_component = graphics_component
+        self.sound_component = sound_component
+
+    def update():
+        pass
