@@ -66,7 +66,7 @@ class GameObject:
 
 
 class Character(GameObject):
-
+    # each of these will be implemented and give their own update()
     def __init__(self, physics_component, graphics_component, sound_component):
         # character specific values
         self.x_pos = 0
@@ -79,4 +79,7 @@ class Character(GameObject):
         self.sound_component = sound_component
 
     def update():
+        # physics_component.update()
+        # graphics_component.update()
+        # sound_component.update()
         pass
