@@ -8,3 +8,8 @@
 # - B receives it and responds by sending an event.
 # - That event happens to be one that A cares about, so it receives it. In response, it sends an event…
 # - Go to 2."
+
+# When your messaging system is synchronous, you find cycles quickly
+#  — they overflow the stack and crash your game. With a queue, the asynchrony unwinds the stack,
+# so the game may keep running even though spurious events are sloshing back and forth in there.
+# A common rule to avoid this is to avoid sending events from within code that’s handling one.
