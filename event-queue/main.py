@@ -13,3 +13,8 @@
 #  — they overflow the stack and crash your game. With a queue, the asynchrony unwinds the stack,
 # so the game may keep running even though spurious events are sloshing back and forth in there.
 # A common rule to avoid this is to avoid sending events from within code that’s handling one.
+
+# "When we get two requests to play the same sound, we collapse them to a single request for whichever is loudest."
+
+# "There are infinite ways to distribute code across threads, but a common strategy is to move
+# each domain of the game onto its own thread — audio, rendering, AI, etc."
