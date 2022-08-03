@@ -3,3 +3,7 @@
 # static class and singleton work but also introduce coupling
 
 # "phone book" - "a convenient single place where we control how we’re found."
+
+# "The core difficulty with a service locator is that it takes a dependency — a bit of coupling between
+#  two pieces of code — and defers wiring it up until runtime. This gives you flexibility,
+#  but the price you pay is that it’s harder to understand what your dependencies are by reading the code."
