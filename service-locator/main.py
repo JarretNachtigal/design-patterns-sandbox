@@ -26,6 +26,7 @@ class ExampleService:
         pass
 
 
+# prevent null return (in a language where that matters)
 class NullService:
     def __init__(self) -> None:
         pass
@@ -36,4 +37,10 @@ class NullService:
 
 class ServiceLocator:
     def __init__(self) -> None:
+        # prevent null return (in a language where that matters)
+        self.service = NullService()
         pass
+
+    # this is the located service
+    def provide(self, service):
+        self.service = service
