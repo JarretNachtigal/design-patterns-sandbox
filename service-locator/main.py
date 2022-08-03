@@ -21,3 +21,8 @@ if __name__ == "__main__":
 class ExampleService:
     def __init__(self) -> None:
         pass
+
+
+class NullService:
+    def __init__(self) -> None:
+        pass
