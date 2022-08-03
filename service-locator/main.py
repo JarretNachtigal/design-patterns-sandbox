@@ -57,7 +57,7 @@ class ServiceLocator:
 # in a bunch of places in the code
 # but this time this class wraps it in a decorator to allow logging
 # this can be used in place of ExampleService in the locator
-class LoggedExampleService:
+class LoggedExampleServiceWrapper:
     def __init__(self, service) -> None:
         self.service = ExampleService()
 
@@ -82,7 +82,7 @@ def main():
     # logged
 
     # wraps an instance of a service
-    logged_service_instance = LoggedExampleService(service_instance)
+    logged_service_instance = LoggedExampleServiceWrapper(service_instance)
     logged_locator_instance = ServiceLocator()
     logged_locator_instance.provide(logged_service_instance)
     # called in code
