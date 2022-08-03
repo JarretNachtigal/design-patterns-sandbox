@@ -55,3 +55,21 @@ class ServiceLocator:
 
     def get_service(self):
         return self.service
+
+
+# this would be an audioengine or something that needs to be used
+# in a bunch of places in the code
+# but this time this class wraps it in a decorator to allow logging
+# this can be used in place of ExampleService in the locator
+class LoggedExampleService:
+    def __init__(self, service) -> None:
+        self.service = ExampleService()
+
+    def do_something(self):
+        print('did something')
+        self.service.do_something
+        pass
+
+    def do_something_else(self):
+        print('did something else')
+        pass
