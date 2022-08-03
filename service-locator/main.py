@@ -7,3 +7,5 @@
 # "The core difficulty with a service locator is that it takes a dependency — a bit of coupling between
 #  two pieces of code — and defers wiring it up until runtime. This gives you flexibility,
 #  but the price you pay is that it’s harder to understand what your dependencies are by reading the code."
+
+# "The Unity framework uses this pattern in concert with the Component pattern in its GetComponent() method."
