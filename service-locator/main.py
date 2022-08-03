@@ -14,6 +14,9 @@ def main():
     locator = ServiceLocator()
     service_instance = ExampleService()
     locator.provide(service_instance)
+    # this will be done where needed in the code base
+    returned_service = locator.get_service()
+    returned_service.do_something()
 
 
 if __name__ == "__main__":
