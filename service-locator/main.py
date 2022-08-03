@@ -9,3 +9,10 @@
 #  but the price you pay is that it’s harder to understand what your dependencies are by reading the code."
 
 # "The Unity framework uses this pattern in concert with the Component pattern in its GetComponent() method."
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
