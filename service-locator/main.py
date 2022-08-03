@@ -10,28 +10,6 @@
 
 # "The Unity framework uses this pattern in concert with the Component pattern in its GetComponent() method."
 
-def main():
-    locator = ServiceLocator()
-    service_instance = ExampleService()
-    locator.provide(service_instance)
-    # this will be done where needed in the code base
-    returned_service = locator.get_service()
-    returned_service.do_something()
-
-    # logged
-
-    logged_service_instance = LoggedExampleService()
-    logged_locator_instance = ServiceLocator()
-    logged_service_instance.provide(logged_service_instance)
-    # called in code
-    logged_returned_service = logged_locator_instance.get_service()
-    logged_returned_service.do_something()
-    logged_returned_service.do_something_else()
-
-
-if __name__ == "__main__":
-    main()
-
 
 # this would be an audioengine or something that needs to be used
 # in a bunch of places in the code
@@ -40,9 +18,11 @@ class ExampleService:
         pass
 
     def do_something(self):
+        print('did something')
         pass
 
     def do_something_else(self):
+        print('did something else')
         pass
 
 
@@ -82,10 +62,34 @@ class LoggedExampleService:
         self.service = ExampleService()
 
     def do_something(self):
-        print('did something')
-        self.service.do_something
-        pass
+        print('log did something')
+        self.service.do_something()
 
     def do_something_else(self):
-        print('did something else')
-        pass
+        print('log did something else')
+        self.service.do_something_else()
+
+
+def main():
+    locator = ServiceLocator()
+    service_instance = ExampleService()
+    locator.provide(service_instance)
+    # this will be done where needed in the code base
+    returned_service = locator.get_service()
+    returned_service.do_something()
+    returned_service.do_something_else()
+
+    # logged
+
+    # wraps an instance of a service
+    logged_service_instance = LoggedExampleService(service_instance)
+    logged_locator_instance = ServiceLocator()
+    logged_locator_instance.provide(logged_service_instance)
+    # called in code
+    logged_returned_service = logged_locator_instance.get_service()
+    logged_returned_service.do_something()
+    logged_returned_service.do_something_else()
+
+
+if __name__ == "__main__":
+    main()
