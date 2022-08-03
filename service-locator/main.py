@@ -32,3 +32,8 @@ class NullService:
 
     def do_something(self):
         pass
+
+
+class ServiceLocator:
+    def __init__(self) -> None:
+        pass
