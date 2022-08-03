@@ -2,4 +2,4 @@
 
 # static class and singleton work but also introduce coupling
 
-# "phone book"
+# "phone book" - "a convenient single place where we control how we’re found."
