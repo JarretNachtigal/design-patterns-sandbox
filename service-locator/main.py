@@ -11,13 +11,17 @@
 # "The Unity framework uses this pattern in concert with the Component pattern in its GetComponent() method."
 
 def main():
-    pass
+    locator = ServiceLocator()
+    service_instance = ExampleService()
+    locator.provide(service_instance)
 
 
 if __name__ == "__main__":
     main()
 
 
+# this would be an audioengine or something that needs to be used
+# in a bunch of places in the code
 class ExampleService:
     def __init__(self) -> None:
         pass
@@ -35,6 +39,7 @@ class NullService:
         pass
 
 
+# return the instance of a service to many places in code base
 class ServiceLocator:
     def __init__(self) -> None:
         # prevent null return (in a language where that matters)
@@ -44,3 +49,6 @@ class ServiceLocator:
     # this is the located service
     def provide(self, service):
         self.service = service
+
+    def get_service(self):
+        return self.service
