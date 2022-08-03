@@ -18,6 +18,16 @@ def main():
     returned_service = locator.get_service()
     returned_service.do_something()
 
+    # logged
+
+    logged_service_instance = LoggedExampleService()
+    logged_locator_instance = ServiceLocator()
+    logged_service_instance.provide(logged_service_instance)
+    # called in code
+    logged_returned_service = logged_locator_instance.get_service()
+    logged_returned_service.do_something()
+    logged_returned_service.do_something_else()
+
 
 if __name__ == "__main__":
     main()
@@ -32,6 +42,9 @@ class ExampleService:
     def do_something(self):
         pass
 
+    def do_something_else(self):
+        pass
+
 
 # prevent null return (in a language where that matters)
 class NullService:
@@ -39,6 +52,9 @@ class NullService:
         pass
 
     def do_something(self):
+        pass
+
+    def do_something_else(self):
         pass
 
 
