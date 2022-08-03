@@ -22,6 +22,9 @@ class ExampleService:
     def __init__(self) -> None:
         pass
 
+    def do_something(self):
+        pass
+
 
 class NullService:
     def __init__(self) -> None:
