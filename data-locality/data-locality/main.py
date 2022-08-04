@@ -4,3 +4,5 @@
 
 # "Whenever your chip needs a byte of data from RAM, it automatically grabs a whole chunk of contiguous memory — usually around 64 to 128 bytes — and puts it in the cache.
 # This dollop of memory is called a cache line."
+
+# cpu hit / miss
