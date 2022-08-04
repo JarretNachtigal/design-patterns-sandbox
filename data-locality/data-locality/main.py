@@ -12,3 +12,6 @@
 # "Take advantage of that to improve performance by increasing data locality — keeping data in contiguous memory in the order that you process it."
 
 # "Cachegrind - free tool to test this"
+
+# "In C++, using interfaces implies accessing objects through pointers or references.
+# But going through a pointer means hopping across memory, which leads to the cache misses this pattern works to avoid."
