@@ -1,3 +1,5 @@
+# Python Omegalul
+
 # "organize your data structures so that the things you’re processing are next to each other in memory."
 
 # "Modern computers have a little chunk of memory right inside the chip. The CPU can pull data from this much faster than it can from main memory."
@@ -6,3 +8,7 @@
 # This dollop of memory is called a cache line."
 
 # cpu hit / miss
+
+# "Take advantage of that to improve performance by increasing data locality — keeping data in contiguous memory in the order that you process it."
+
+# "Cachegrind - free tool to test this"
