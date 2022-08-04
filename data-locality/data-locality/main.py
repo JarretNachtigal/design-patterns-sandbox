@@ -24,3 +24,15 @@
 # - Then the game entity has a pointer to the component. Another cache miss.
 # - Then we update the component.
 # - Now we go back to step one for every component of every entity in the game.
+# "“pointer chasing”"
+# might as well be calling sleep() as fat as cpu usage is concerned
+
+# this an be mitigaed by butting every component of each type into a contigous array
+# physics_components = [...]
+# graphics_components = [...]
+# sounds_components = [...]
+# and calling update() on them in order
+# loop
+# physics_components[i].update()
+# i++
+# and so on
