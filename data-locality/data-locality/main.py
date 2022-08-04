@@ -27,7 +27,7 @@
 # "“pointer chasing”"
 # might as well be calling sleep() as fat as cpu usage is concerned
 
-# this an be mitigaed by butting every component of each type into a contigous array
+# this an be mitigated by butting every component of each type into a contigous array in gameloop
 # physics_components = [...]
 # graphics_components = [...]
 # sounds_components = [...]
