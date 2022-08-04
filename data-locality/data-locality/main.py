@@ -16,3 +16,11 @@
 # "In C++, using interfaces implies accessing objects through pointers or references.
 # But going through a pointer means hopping across memory, which leads to the cache misses this pattern works to avoid."
 # "The more you design your program around data locality, the more you will have to give up inheritance, interfaces, and the benefits those tools can provide."
+
+
+# implementation with GameObject and Component patterns - physics grapghics cound input drivers
+# passed into GameObject
+# - The array of game entities is storing pointers to them, so for each element in the array, we have to traverse that pointer. That’s a cache miss.
+# - Then the game entity has a pointer to the component. Another cache miss.
+# - Then we update the component.
+# - Now we go back to step one for every component of every entity in the game.
