@@ -36,3 +36,8 @@
 # physics_components[i].update()
 # i++
 # and so on
+
+# "This doesn’t mean we need to get rid of GameEntity either.
+# We can leave it as it is with pointers to its components.
+# They’ll just point into those arrays."
+# guy = GameObject(phyics_components[0], graphics_componenets[0], ...)
