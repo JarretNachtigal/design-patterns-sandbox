@@ -55,3 +55,10 @@
 # ex : rendering particles
 
 # "Instead of checking the active flag, we’ll sort by it. "
+# "Assuming the array is already sorted — and it is at first when all particles are inactive
+#  — the only time it can become unsorted is when a particle has been activated or deactivated.
+# We can handle those two cases pretty easily. When a particle gets activated, we move it up to
+# the end of the active particles by swapping it with the first inactive one:"
+
+# keep note of the index for num active and use it to swap, then increment or decrement counter
+# in loop, go through num_active of the partices in the array
