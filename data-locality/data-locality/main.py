@@ -7,6 +7,12 @@
 # "Whenever your chip needs a byte of data from RAM, it automatically grabs a whole chunk of contiguous memory — usually around 64 to 128 bytes — and puts it in the cache.
 # This dollop of memory is called a cache line."
 
+# "There’s a key assumption here, though: one thread.
+# If you are modifying nearby data on multiple threads,
+# it’s faster to have it on different cache lines. If two threads
+# try to tweak data on the same cache line, both cores have to do some costly
+# synchronization of their caches."
+
 # cpu hit / miss
 
 # "Take advantage of that to improve performance by increasing data locality — keeping data in contiguous memory in the order that you process it."
