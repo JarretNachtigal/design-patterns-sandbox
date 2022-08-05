@@ -49,3 +49,9 @@
 # guy = GameObject(phyics_components[0], graphics_componenets[0], ...)
 
 # "the Data Locality pattern is when you have a performance problem. Don’t waste time applying this to some infrequently executed corner of your codebase."
+
+
+# PACKED DATA
+# ex : rendering particles
+
+# "Instead of checking the active flag, we’ll sort by it. "
