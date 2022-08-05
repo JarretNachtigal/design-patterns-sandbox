@@ -68,3 +68,6 @@
 # seperate the commonly used data from the uncommonly used data so that the uncommon is only grabbed by cpu when needed
 # - friend class instance pointer - the cpu loads the pointer in the instance variables but only follows it when needed
 # - in C++ not sure how/if this works in python
+
+
+# subclassing/polymorphism - avoid when possible if performance is needed with other patterns like typepbject
