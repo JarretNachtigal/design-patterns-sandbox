@@ -62,3 +62,9 @@
 
 # keep note of the index for num active and use it to swap, then increment or decrement counter
 # in loop, go through num_active of the partices in the array
+
+# HOT/COLD SPLITTING
+
+# seperate the commonly used data from the uncommonly used data so that the uncommon is only grabbed by cpu when needed
+# - friend class instance pointer - the cpu loads the pointer in the instance variables but only follows it when needed
+# - in C++ not sure how/if this works in python
