@@ -47,3 +47,5 @@
 # We can leave it as it is with pointers to its components.
 # They’ll just point into those arrays."
 # guy = GameObject(phyics_components[0], graphics_componenets[0], ...)
+
+# "the Data Locality pattern is when you have a performance problem. Don’t waste time applying this to some infrequently executed corner of your codebase."
