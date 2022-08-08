@@ -1,3 +1,30 @@
+# represents the game object to be rendered, could be a player, stationary object, vehicle
+class GameObject:
+    def __init__(self, position=0) -> None:
+        self.position = position
+        self.mesh = "pretend this is a graphics mesh"
+
+    def move(self, position):
+        self.position = position
+
+
+class SceneGraphNode:
+    def __init__(self, game_object: GameObject) -> None:
+        self.game_object = game_object
+
+
+class SceneGraph:
+    def __init__(self) -> None:
+        pass
+
+
+def main():
+
+    pass
+
+
+if __name__ == "__main__":
+    pass
 # "Avoid unnecessary work by deferring it until the result is needed."
 
 # used in calculation and synchronization
@@ -61,11 +88,3 @@
 # dirty flag used when derived is out of sync with primary
 # it is set when the primary data changes
 # otherwise cached data is used
-
-
-def main():
-    pass
-
-
-if __name__ == "__main__":
-    pass
