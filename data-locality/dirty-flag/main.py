@@ -1,6 +1,7 @@
 # describes and objects position, rotation, and scale in the world
 class Transform:
-    def __init__(self) -> None:
+    def __init__(self, starting_pos=0) -> None:
+        self.position = starting_pos
         pass
 
     # combines the transform details of parent/child SceneGraphNodes or any that need to move
