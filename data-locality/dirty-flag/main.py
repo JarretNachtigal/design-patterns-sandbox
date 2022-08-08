@@ -6,23 +6,23 @@ class Transform:
 
     # combines the transform details of parent/child SceneGraphNodes or any that need to move
     # relative to eachother to the Transform of the object (the child I think)
-    @staticmethod
     def combine(self, other_transform):
         pass
 
 
-# represents the game object to be rendered, could be a player, stationary object, vehicle
+# represents the game object to be rendered as a node in the SceneGraph, could be a player, stationary object, vehicle
 class SceneGraphNode:
     def __init__(self, mesh) -> None:
         # pretend mesh
         self.mesh = mesh
         # list of objects that move relative to self.game_object
         self.children = []
-        local = Transform()
+        self.local = Transform()
 
 
 class SceneGraph:
-    def __init__(self) -> None:
+    def __init__(self, head) -> None:
+        self.head = head or SceneGraphNode(None)  # default empty node
         pass
 
 
