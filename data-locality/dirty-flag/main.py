@@ -17,6 +17,8 @@ class SceneGraphNode:
         # list of objects that move relative to self.game_object
         self.children = []
         self.local = Transform()
+        # used to track parent node transform movement, if false use cached transform data
+        self.dirty = True
 
     def render(self, parent_world):
         # combine parent transform with local transform to move the local transform
