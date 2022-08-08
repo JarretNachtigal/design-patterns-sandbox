@@ -1,5 +1,7 @@
 # "Avoid unnecessary work by deferring it until the result is needed."
 
+# used in calculation and synchronization
+
 # local transform - movement of object - moving a hand
 
 # world transform - movement of object and all related objects in hierarchy - moving a hand in a moving car
@@ -35,3 +37,27 @@
 
 # move parrot
 # recalc parrot
+
+# we only need the answer from the last parrot calc
+# DEFERRED RECALCULATION
+# decouple local transforms from world transforms, then recalc world transform later
+
+# add a FLAG representing: is the world transform out of date?
+
+# ex from book - becomes
+
+# move ship
+# move nest
+# move pirate
+# move parrot
+
+# render
+# recalc ship
+# recalc nest
+# recalc pirate
+# recalc parrot
+
+# primary/derived data
+# dirty flag used when derived is out of sync with primary
+# it is set when the primary data changes
+# otherwise cached data is used
