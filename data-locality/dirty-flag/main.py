@@ -1,3 +1,10 @@
+# BROKEN
+# BROKEN
+# BROKEN
+# BROKEN
+# BROKEN
+
+
 # describes and objects position, rotation, and scale in the world
 class Transform:
     def __init__(self, starting_pos=0) -> None:
@@ -20,15 +27,23 @@ class SceneGraphNode:
         # used to track parent node transform movement, if false use cached transform data
         self.dirty = True
 
-    def render(self, parent_world):
-        # combine parent transform with local transform to move the local transform
-        world = self.local.combine(parent_world)
+    # check dirty flag, render each node
+    def render(self, parent_world, dirty):
+
+        if self.dirty or dirty:
+            # combine parent transform with local transform to move the local transform
+            world = self.local.combine(parent_world)
 
         # render mesh if visibile object
 
         # pass the incremented world on to the children
         for child in self.children:
-            child.render(world)
+            child.render(world, self.dirty)
+
+    # used to track if transform is needed
+    def set_transform(self, local: Transform):
+        self.local = local
+        self.dirty = True
 
 # holds all objects in SceneGraphNodes which each have lists of child SceneGraphNodes
 
