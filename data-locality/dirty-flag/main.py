@@ -1,11 +1,17 @@
+class Transform:
+    def __init__(self) -> None:
+        pass
+
 # represents the game object to be rendered, could be a player, stationary object, vehicle
+
+
 class GameObject:
-    def __init__(self, position=0) -> None:
-        self.position = position
+    def __init__(self, transform=0) -> None:
+        self.transform = transform
         self.mesh = "pretend this is a graphics mesh"
 
-    def move(self, position):
-        self.position = position
+    def move(self, transform):
+        self.transform = transform
 
     # return pretend mesh for pretend rendering
     def get_mesh(self):
@@ -14,7 +20,7 @@ class GameObject:
 
 class SceneGraphNode:
     def __init__(self, game_object: GameObject) -> None:
-        # game object containing position and mesh
+        # game object containing transform and mesh
         self.game_object = game_object
         # list of objects that move relative to self.game_object
         self.children = []
