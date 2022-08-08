@@ -1,7 +1,10 @@
+# describes and objects position, rotation, and scale in the world
 class Transform:
     def __init__(self) -> None:
         pass
 
+    # combines the transform details of parent/child SceneGraphNodes or any that need to move
+    # relative to eachother to the Transform of the object (the child I think)
     @staticmethod
     def combine(self, other_transform):
         pass
