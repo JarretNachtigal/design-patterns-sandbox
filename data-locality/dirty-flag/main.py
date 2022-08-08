@@ -20,6 +20,7 @@ class SceneGraphNode:
         self.local = Transform()
 
 
+# holds all objects in SceneGraphNodes which each have lists of child SceneGraphNodes
 class SceneGraph:
     def __init__(self, head) -> None:
         self.head = head or SceneGraphNode(None)  # default empty node
@@ -27,12 +28,12 @@ class SceneGraph:
 
 
 def main():
-
-    pass
+    node = SceneGraphNode("pretend mesh")
+    scene_graph = SceneGraph(node)
 
 
 if __name__ == "__main__":
-    pass
+    main()
 # "Avoid unnecessary work by deferring it until the result is needed."
 
 # used in calculation and synchronization
