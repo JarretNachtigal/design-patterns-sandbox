@@ -7,10 +7,17 @@ class GameObject:
     def move(self, position):
         self.position = position
 
+    # return pretend mesh for pretend rendering
+    def get_mesh(self):
+        return self.mesh
+
 
 class SceneGraphNode:
     def __init__(self, game_object: GameObject) -> None:
+        # game object containing position and mesh
         self.game_object = game_object
+        # list of objects that move relative to self.game_object
+        self.children = []
 
 
 class SceneGraph:
