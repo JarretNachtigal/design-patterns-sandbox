@@ -61,3 +61,11 @@
 # dirty flag used when derived is out of sync with primary
 # it is set when the primary data changes
 # otherwise cached data is used
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    pass
