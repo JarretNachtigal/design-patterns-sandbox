@@ -2,28 +2,19 @@ class Transform:
     def __init__(self) -> None:
         pass
 
+    @staticmethod
+    def combine(self, other_transform):
+        pass
+
+
 # represents the game object to be rendered, could be a player, stationary object, vehicle
-
-
-class GameObject:
-    def __init__(self, transform=0) -> None:
-        self.transform = transform
-        self.mesh = "pretend this is a graphics mesh"
-
-    def move(self, transform):
-        self.transform = transform
-
-    # return pretend mesh for pretend rendering
-    def get_mesh(self):
-        return self.mesh
-
-
 class SceneGraphNode:
-    def __init__(self, game_object: GameObject) -> None:
-        # game object containing transform and mesh
-        self.game_object = game_object
+    def __init__(self, mesh) -> None:
+        # pretend mesh
+        self.mesh = mesh
         # list of objects that move relative to self.game_object
         self.children = []
+        local = Transform()
 
 
 class SceneGraph:
