@@ -18,8 +18,12 @@ class SceneGraphNode:
         self.children = []
         self.local = Transform()
 
+    def render():
+        pass
 
 # holds all objects in SceneGraphNodes which each have lists of child SceneGraphNodes
+
+
 class SceneGraph:
     def __init__(self, head) -> None:
         self.head = head or SceneGraphNode(None)  # default empty node
