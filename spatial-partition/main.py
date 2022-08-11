@@ -14,3 +14,5 @@
 # used in static situations (game world) as well
 # used when "you have a set of objects that each have some kind of position and that you are doing enough
 # queries to find objects by location that your performance is suffering."
+
+# "FIXED GRID"
