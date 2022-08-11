@@ -70,4 +70,4 @@
 # - in C++ not sure how/if this works in python
 
 
-# subclassing/polymorphism - avoid when possible if performance is needed with other patterns like typepbject
+# subclassing/polymorphism - avoid when possible if performance is with other patterns like typepbject
