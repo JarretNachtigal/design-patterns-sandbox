@@ -2,6 +2,6 @@
 
 # ex RTS games
 
-# simple 2d rendidion
+# simple 1d rendidion - units on a line
 # array sort by unit location -> binary search (takes search from O(n^2) to O(n log n)
 # pigeonhole? -> O(n)?
