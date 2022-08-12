@@ -27,3 +27,9 @@
 
 # i think this means that if unit a sees unit b, they effectively both see eachother
 # otherwise units would only be able to see and attack from one direction
+
+# Grid
+# Quadtree
+# BSP
+# k-d tree
+# Bounding volume hierarchy
