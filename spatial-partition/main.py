@@ -16,3 +16,6 @@
 # queries to find objects by location that your performance is suffering."
 
 # "FIXED GRID"
+
+# grid - array of pointers (cells)
+# cell - doubly linked list, holds most recently added unit as head
