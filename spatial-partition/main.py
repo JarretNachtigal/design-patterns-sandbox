@@ -24,3 +24,6 @@
 # adjacent cells as well for enemies to hit
 # on moving into new cells, unit will be moved into the correct cell list
 # old check 4 of the 8 surrounding cells to prevent double checks
+
+# i think this means that if unit a sees unit b, they effectively both see eachother
+# otherwise units would only be able to see and attack from one direction
