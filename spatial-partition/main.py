@@ -19,3 +19,6 @@
 
 # grid - array of pointers (cells)
 # cell - doubly linked list, holds most recently added unit as head
+
+# partitions the battlefield into smaller battlefields, check (in unit range/vision)
+# adjacent cells as well for enemies to hit
