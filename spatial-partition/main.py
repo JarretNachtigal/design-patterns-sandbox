@@ -22,3 +22,5 @@
 
 # partitions the battlefield into smaller battlefields, check (in unit range/vision)
 # adjacent cells as well for enemies to hit
+# on moving into new cells, unit will be moved into the correct cell list
+# old check 4 of the 8 surrounding cells to prevent double checks
